@@ -7,11 +7,15 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
 <div id="app">
-    <input type="text" v-model="message"></input>
+    <div class="parent">
+    <input type="text" v-model="message" style="width: 200px;"></input>
+    <p></p>
     <button v-on:click="sendMessage">こたえをおくる</button>
     <p>{{result}}</p>
+    </div>
 
 <script>
 new Vue({
