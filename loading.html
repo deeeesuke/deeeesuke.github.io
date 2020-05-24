@@ -10,8 +10,21 @@
     <link rel="stylesheet" href="css/style.css">
 
 <div id="app">
-    <div class="resizeimage"><img src="./images/loading.gif"><br></div>
+    <div class="parent"><img src="./images/loading.gif"></div>
+</div>
+</body>
+
 <script>
+
+var param = location.search
+
+setTimeout(function(){
+    if (param == '?maru'){
+        window.location.href = './maru.html';
+    }
+    else window.location.href = './batsu.html';
+}, 3*1000);
+
 new Vue({
     el: '#app',
     data: {
@@ -31,6 +44,4 @@ new Vue({
     }
 })
 </script>
-</div>
-</body>
 </html>

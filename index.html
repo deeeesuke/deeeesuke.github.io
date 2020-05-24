@@ -19,10 +19,11 @@
         </div>
     <p></p>
     <!-- <button v-on:click="sendMessage">こたえをおくる</button> -->
-    <a href="#" class="btn-square" v-on:click="sendMessage" onclick="location.href='./loading.html'">こたえをおくる</a>
-    <p>{{result}}</p>
+    <a href="#" class="btn-square" v-on:click="sendMessage">こたえをおくる</a>
     </div>
 
+</div>
+</body>
 <script>
 new Vue({
     el: '#app',
@@ -35,14 +36,15 @@ new Vue({
         sendMessage: function(){
             if(this.message == 'パンダ') {
                 this.result = 'せいかい！'
+                window.location.href = './loading.html?maru'
             }
             else{
                 this.result = 'ざんねんちがうよ！'
+                window.location.href = './loading.html?batsu'         
             }
         },
     }
 })
 </script>
-</div>
-</body>
+
 </html>
