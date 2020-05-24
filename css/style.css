@@ -3,9 +3,6 @@
     flex-direction: column;
     align-items: center;
     padding: 10%;
-    font-family: メイリオ;
-    font-size: 25px;
-    font-weight: bold;
 }
 
 .btn-square {
@@ -110,4 +107,10 @@
 	left: 0;
 	transition: 0.3s;
 	color: #da3c41;
+}
+
+.font {
+    font-family: メイリオ;
+    font-size: 25px;
+    font-weight: bold;
 }
