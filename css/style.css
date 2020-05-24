@@ -108,3 +108,7 @@
 	transition: 0.3s;
 	color: #da3c41;
 }
+
+.resizeimage img {
+    width: 100%;
+}
