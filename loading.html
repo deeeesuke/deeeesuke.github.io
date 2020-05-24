@@ -10,19 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 <div id="app">
-    <div class="parent">
-    <!-- <input type="text" v-model="message" style="width: 200px;"></input> -->
-    <div class="cp_iptxt">
-        <input class="ef" type="text" placeholder="" v-model="message">
-        <label>こたえをここにかいてね！</label>
-        <span class="focus_line"><i></i></span>
-        </div>
-    <p></p>
-    <!-- <button v-on:click="sendMessage">こたえをおくる</button> -->
-    <a href="#" class="btn-square" v-on:click="sendMessage" onclick="location.href='./loading.html'">こたえをおくる</a>
-    <p>{{result}}</p>
-    </div>
-
+    <div class="parent"><img src="./images/loading.gif"><br></div>
 <script>
 new Vue({
     el: '#app',
