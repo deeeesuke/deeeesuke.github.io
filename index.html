@@ -36,10 +36,11 @@ new Vue({
     methods: {
         sendMessage: function(){
             console.log("testtest")
+            var name = this.message;
             
             var formData = new FormData();
             formData.append("action", "user");
-            formData.append("name", this.message);
+            formData.append("name", name);
             axios.post(URL, formData)
             
             if(this.message == 'パンダ') {
