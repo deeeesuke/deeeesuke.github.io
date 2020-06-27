@@ -35,25 +35,12 @@ new Vue({
     },
     methods: {
         sendMessage: function(){
-//             var request = new XMLHttpRequest();
-//             var URL = "https://script.google.com/macros/s/AKfycbyMUEvhXYpezUhEGk2YBhgWyAN3egov1z2BJURy6zdXdI980qSs/exec"
-//             request.open('POST', URL, true);
-//             request.responseType = 'json';
-//             request.send( "action=user&&name=dddd" );
             console.log("testtest")
+            
             var formData = new FormData();
             formData.append("action", "user");
-            formData.append("name", "daisuke");
+            formData.append("name", this.message);
             axios.post(URL, formData)
- 
-//             request.onreadystatechange = function() {
-
-//                 if(request.readyState === 4 && request.status === 200) {
-
-//                     console.log( request.responseText );
-
-//                 }
-//             }
             
             if(this.message == 'パンダ') {
                 this.result = 'せいかい！'
