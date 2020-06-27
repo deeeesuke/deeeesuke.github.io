@@ -34,14 +34,6 @@ new Vue({
     },
     methods: {
         sendMessage: function(){
-            if(this.message == 'パンダ') {
-                this.result = 'せいかい！'
-                window.location.href = './loading.html?maru'
-            }
-            else{
-                this.result = 'ざんねんちがうよ！'
-                window.location.href = './loading.html?batsu'         
-            }
             var request = new XMLHttpRequest();
             var URL = "https://script.google.com/macros/s/AKfycbyMUEvhXYpezUhEGk2YBhgWyAN3egov1z2BJURy6zdXdI980qSs/exec"
             request.open('POST', URL, true);
@@ -57,6 +49,16 @@ new Vue({
 
                 }
             }
+            
+            if(this.message == 'パンダ') {
+                this.result = 'せいかい！'
+                // window.location.href = './loading.html?maru'
+            }
+            else{
+                this.result = 'ざんねんちがうよ！'
+                // window.location.href = './loading.html?batsu'         
+            }
+
         },
     }
 })
