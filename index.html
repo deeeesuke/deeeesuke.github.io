@@ -40,7 +40,7 @@ new Vue({
             var URL = "https://script.google.com/macros/s/AKfycbyMUEvhXYpezUhEGk2YBhgWyAN3egov1z2BJURy6zdXdI980qSs/exec"
             var formData = new FormData();
             formData.append("action", "user");
-            formData.append("name", "dddd");
+            formData.append("name", this.message);
             axios.post(URL, formData)
             
             if(this.message == 'パンダ') {
