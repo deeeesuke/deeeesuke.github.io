@@ -7,6 +7,7 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
 <div id="app">
@@ -40,6 +41,10 @@ new Vue({
             request.responseType = 'json';
             request.send( "action=user&&name=dddd" );
             console.log("testtest")
+            var formData = new FormData();
+            formData.append("action", "user");
+            formData.append("name", "daisuke");
+            axios.post(URL, formData)
  
             request.onreadystatechange = function() {
 
